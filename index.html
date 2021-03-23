@@ -1,1 +1,314 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Home</title>
+     <style>
+       *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'courier new';
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #111;
+}
+
+
+.container{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 0px;
+     flex-wrap: wrap;
+}
+
+
+.container .box0{
+     position: relative;
+     width: 360px;
+     height: 500px;
+     color: #fff;
+     background: #111;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 30px;
+     transition: 0.6s;
+}
+.container .box1{
+     position: relative;
+     width: 360px;
+     height: 500px;
+     color: #fff;
+     background: #111;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 30px;
+     transition: 0.6s;
+}
+.container .box2{
+     position: relative;
+     width: 360px;
+     height: 500px;
+     color: #fff;
+     background: #111;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 30px;
+     transition: 0.6s;
+}
+
+
+.container .box0:hover{
+     transform: translateY(-40px);
+}
+.container .box1:hover{
+     transform: translateY(-40px);
+}
+.container .box2:hover{
+     transform: translateY(-40px);
+}
+
+
+.container .box0::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.container .box0::after{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(45deg,#ffbc00,#ff0058);
+     filter: blur(20px)
+}
+.container .box1::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.container .box1::after{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(315deg,#03a9f4,#ff0058);
+     filter: blur(20px)
+}
+.container .box2::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.container .box2::after{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(315deg,#4dff03,#00d0ff);
+     filter: blur(20px)
+}
+
+
+
+.container .box0 span{
+     position: absolute;
+     top: 6px;
+     left: 6px;
+     right: 6px;
+     bottom: 6px;
+     background: rgba(0, 0, 0, 0.6);
+     z-index: 2;
+}
+.container .box0 span::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     background: rgba(255,255,255,0.2);
+     pointer-events: none;
+}
+.container .box1 span{
+     position: absolute;
+     top: 6px;
+     left: 6px;
+     right: 6px;
+     bottom: 6px;
+     background: rbga(0,0,0,0.6);
+     z-index: 2;
+}
+.container .box1 span::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     background: rgba(255,255,255,0.2);
+     pointer-events: none;
+}
+.container .box2 span{
+     position: absolute;
+     top: 6px;
+     left: 6px;
+     right: 6px;
+     bottom: 6px;
+     background: rbga(0,0,0,0.6);
+     z-index: 2;
+}
+.container .box2 span::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     background: rgba(255,255,255,0.2);
+     pointer-events: none;
+}
+
+
+.container .box0 .content{
+     position: relative;
+     z-index: 10;
+     padding: 20px 40px;
+}
+.container .box1 .content{
+     position: relative;
+     z-index: 10;
+     padding: 20px 40px;
+}
+.container .box2 .content{
+     position: relative;
+     z-index: 10;
+     padding: 20px 40px;
+}
+
+
+.container .box0 .content h2{
+     font-size: 2em;
+     color: #fff;
+     margin-bottom: 10px;
+}
+.container .box1 .content h2{
+     font-size: 2em;
+     color: #fff;
+     margin-bottom: 10px;
+}
+.container .box2 .content h2{
+     font-size: 2em;
+     color: #fff;
+     margin-bottom: 10px;
+}
+
+
+.container .box0 .content p{
+     font-size: 1.1em;
+     color: #fff;
+     margin-bottom: 10px;
+     line-height: 1.4em;
+}
+.container .box1 .content p{
+     font-size: 1.1em;
+     color: #fff;
+     margin-bottom: 10px;
+     line-height: 1.4em;
+}
+.container .box2 .content p{
+     font-size: 1.1em;
+     color: #fff;
+     margin-bottom: 10px;
+     line-height: 1.4em;
+}
+
+
+.container .box0 .content a{
+     display: inline-block;
+     font-size: 1.1em;
+     color: #111;
+     background: #fff;
+     padding: 10px;
+     text-decoration: none;
+     font-weight: 700;
+}
+.container .box1 .content a{
+     display: inline-block;
+     font-size: 1.1em;
+     color: #111;
+     background: #fff;
+     padding: 10px;
+     text-decoration: none;
+     font-weight: 700;
+}
+.container .box2 .content a{
+     display: inline-block;
+     font-size: 1.1em;
+     color: #111;
+     background: #fff;
+     padding: 10px;
+     text-decoration: none;
+     font-weight: 700;
+}
+      </style>
+</head>
+<body>
+     <div class="container">
+          <div class="box0">
+               <span></span>
+               <div class="content">
+                    <h2>Card One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro modi temporibus totam ab provident animi amet veritatis dolores autem.</p>
+                    <a href="#">Read More</a>
+               </div>
+          </div>
+          <div class="box1">
+               <span></span>
+               <div class="content">
+                    <h2>Card Two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro modi temporibus totam ab provident animi amet veritatis dolores autem.</p>
+                    <a href="#">Read More</a>
+               </div>
+          </div>
+          <div class="box2">
+               <span></span>
+               <div class="content">
+                    <h2>Card Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro modi temporibus totam ab provident animi amet veritatis dolores autem.</p>
+                    <a href="#">Read More</a>
+               </div>
+          </div>
+     </div>
+</body>
+</html>
